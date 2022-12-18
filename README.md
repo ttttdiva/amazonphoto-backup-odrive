@@ -3,7 +3,7 @@
 Amazon Photoに大量のお気に入り画像をアップロードする  
 odrive_backup.bat：8行目で指定されたパス配下のファイルのバックアップを開始  
 
-Amazon PhotoのAPIが現在受付終了した為、odriveを利用しCLIでバックアップする(GUIソフトのインストールは不要)
+Amazon PhotoのAPIが受付終了した為、odriveを利用しCLIでバックアップする(GUIソフトのインストールは不要)
 
 ## セットアップ  
 
