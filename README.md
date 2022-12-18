@@ -8,7 +8,7 @@ Amazon PhotoのAPIが現在受付終了した為、odriveを利用しCLIでバ�
 ## セットアップ  
 
 ※初期セットアップ部分うろ覚えの為、詰まった場合は以下リンク参照  
-https://tech.blog.uribou.me/acd_with_odrive/
+https://tech.blog.uribou.me/acd_with_odrive/  
 https://docs.odrive.com/docs/odrive-sync-agent
 
 
