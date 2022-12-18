@@ -1,0 +1,8 @@
+$o="$HOME\.odrive-agent\bin";mkdir "$o" -FORCE;(New-Object System.Net.WebClient).DownloadFile("https://dl.odrive.com/odrive-py","$o\odrive.py");(New-Object System.Net.WebClient).DownloadFile("https://dl.odrive.com/odriveagent-win", "$o\o.zip");$shl=new-object -com shell.application; $shl.namespace("$o").copyhere($shl.namespace("$o\o.zip").items(),0x10);del "$o\o.zip";(New-Object System.Net.WebClient).DownloadFile("https://dl.odrive.com/odrivecli-win", "$o\oc.zip");$shl=new-object -com shell.application; $shl.namespace("$o").copyhere($shl.namespace("$o\oc.zip").items(),0x10);del "$o\oc.zip";
+Start-Job { & "$HOME\.odrive-agent\bin\odriveagent.exe" }
+
+python "$HOME/.odrive-agent/bin/odrive.py" authenticate [auth-code]
+mkdir $HOME/odrive-agent-mount
+python "$HOME/.odrive-agent/bin/odrive.py" mount "$HOME/odrive-agent-mount" /
+
+
